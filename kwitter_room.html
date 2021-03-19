@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slicee</title>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="kwitter.css">
+    </head>
+    <body>
+        <div class="container">
+        <button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger"> Logout</button>
+            <center>
+                <h1 class="header">	
+                    Slicee
+                    <sup>
+                        <img src="m4.png" class="logo">
+                    </sup>
+                </h1>
+                <h3 class="color_white" id="user_name"></h3>
+                <div class="form-group input_div_room_page">
+                    <label>#Add Room:</label>
+                    <br><br>
+                    <input type="text" class="form-control" placeholder="#Add Room name" id="room_name">
+                </div><br>
+                <button class="btn btn-success" onclick="addroom()">#Add Room</button>
+                <h3 class="color_white">#TRENDING ROOMS</h3>
+                <div id="output"></div>
+            </center>
+        </div>
+        <script src="kwitter_room.js"></script>
+        </body>
+</html>
